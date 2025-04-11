@@ -36,7 +36,7 @@ export default async function RootLayout({ children }) {
             <Toaster richColors theme="dark" />
             <footer className="bg-[#1a1a1a] py-12">
               <div className="container mx-auto px-4 text-center text-gray-400">
-                <p>Made with 💗 by Kuch Bhi</p>
+                <p>Made with 💗 by Bug Resolvers</p>
               </div>
             </footer>
           </ThemeProvider>
