@@ -163,9 +163,14 @@ const DashboardView = ({ insights }) => {
                     if (active && payload && payload.length) {
                       return (
                         <div className="bg-background border rounded-lg p-2 shadow-md">
-                          <p className="font-medium">{label}</p>
+                          <p className="font-medium text-pink-900 font-extrabold">
+                            {label}
+                          </p>
                           {payload.map((item) => (
-                            <p key={item.name} className="text-sm">
+                            <p
+                              key={item.name}
+                              className="text-sm text-pink-900"
+                            >
                               {item.name}: ${item.value}K
                             </p>
                           ))}
