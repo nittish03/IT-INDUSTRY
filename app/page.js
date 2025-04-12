@@ -31,16 +31,16 @@ export default function LandingPage() {
       <HeroSection />
 
       {/* Features Section */}
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
+      <section className="w-full py-2 md:py-2 lg:py-32 bg-background">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold tracking-tighter text-center mb-12">
+          <h2 className="text-5xl font-bold tracking-tighter text-center mb-12">
             Powerful Features for Your Career Growth
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="border-2  hover:border-primary hover:scale-110 ease-in-out transition-all  duration-300"
+                className="border-2  hover:border-primary hover:scale-110 ease-in-out transition-all duration-700"
               >
                 <CardContent className="pt-6 text-center flex flex-col items-center">
                   <div className="flex flex-col items-center justify-center">
@@ -58,7 +58,7 @@ export default function LandingPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="w-full py-12 md:py-24 bg-muted/50">
+      <section className="w-full py-5 md:py-2 bg-muted/50">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto text-center">
             <div className="flex flex-col items-center justify-center space-y-2">
@@ -85,17 +85,17 @@ export default function LandingPage() {
       <section className="w-full py-12 md:py-24 bg-background">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold mb-4">How It Works</h2>
+            <h2 className="text-5xl font-bold mb-4">How It Works</h2>
             <p className="text-muted-foreground">
               Four simple steps to accelerate your career growth
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
             {howItWorks.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center hover:scale-110 ease-in-out transition-all  duration-300 border-2 p-2 rounded-md py-8 text-center space-y-4"
+                className="flex flex-col items-center hover:scale-110 ease-in-out transition-all  duration-700 border-2 p-2 rounded-md py-8 text-center space-y-4"
               >
                 <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
                   {item.icon}
@@ -110,12 +110,12 @@ export default function LandingPage() {
 
       <section className="w-full py-12 md:py-24 bg-muted/50">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-5xl font-bold text-center mb-12">
             What Our Users Say
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
             {testimonial.map((testimonial, index) => (
-              <Card key={index} className="bg-background hover:scale-110 ease-in-out transition-all  duration-300">
+              <Card key={index} className="bg-background hover:scale-110 ease-in-out transition-all  duration-700">
                 <CardContent className="pt-6">
                   <div className="flex flex-col space-y-4">
                     <div className="flex items-center space-x-4 mb-4">
@@ -161,7 +161,7 @@ export default function LandingPage() {
       <section className="w-full py-12 md:py-24">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-5xl font-bold mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-muted-foreground">
@@ -169,11 +169,11 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
-                  <AccordionTrigger className="text-left">
+                  <AccordionTrigger className="text-left md:text-xl">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent>{faq.answer}</AccordionContent>
