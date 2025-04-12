@@ -20,7 +20,7 @@ const mentors = [
   },
   {
     id: "mentor3",
-    name: "Karitkey",
+    name: "Kartikey",
     linkedin: "https://www.linkedin.com/in/kartikey-srivastava-8b9139252/",
     Designation: "Business Aanlyst",
   },
